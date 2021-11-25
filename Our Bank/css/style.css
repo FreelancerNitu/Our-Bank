@@ -1,0 +1,163 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: url(../img/Wllpaper.png);
+}
+.login-container h1 {
+	color: green;
+	font-family: cursive;
+	font-weight: 700;
+	font-size: 35px;
+	padding: 10px;
+	background: #ff7961;
+	box-shadow: 4px 4px #974545f5;
+	border-radius: 10px;
+	margin-top: 40px;
+}
+.login-container{
+	width: 500px;
+	margin: 0 auto;
+
+}
+h2.text-center {
+	color: green;
+	font-family: cursive;
+	font-weight: 700;
+	font-size: 35px;
+	padding: 20px;
+	background: #ff7961;
+	box-shadow: 4px 4px #974545f5;
+	border-radius: 10px;
+}
+.form-field label {
+	margin-bottom: 7px;
+	font-size: 18px;
+}
+button.btn.btn-success {
+	padding: 5px 20px;
+	color: #fff;
+	font-size: 17px;
+	font-weight: 700;
+	background: #0a07e3;
+}
+/* .form-content {
+	width: 500px;
+	margin: 0 auto;
+	background: #c98072;
+	padding: 20px;
+	border-radius: 20px;
+	box-shadow: 7px 5px 1px 1px #8573734d;
+} */
+.form-content {
+	width: 100%;
+	margin: 0 auto;
+	background: #9ad526;
+	padding: 20px;
+	border-radius: 20px;
+	box-shadow: 7px 5px 1px 1px #8573734d;
+}
+.fa.fa-eye{
+  cursor: pointer;
+	font-size: 20px;
+}
+.alert-message{
+	visibility: hidden;
+}
+.form-field.error input{
+border-color: red;
+}
+.form-field.success input{
+	border-color: green;
+}
+
+/* Deposite card section starts here */
+.card{
+	margin: 0px 20px;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+.desposit {
+	background: green;
+	width: 100%;
+	color: rgb(255, 255, 255);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.withdraw {
+	background: #163264;
+	width: 100%;
+	color: rgb(255, 255, 255);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.balance {
+	background: #9e13c1;
+	width: 100%;
+	color: rgb(255, 255, 255);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.desposit.card,.withdraw.card,.balance.card h5 {
+	font-family: cursive;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 3px;
+}
+.card-header h3 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: cursive;
+	text-transform: uppercase;
+	font-weight: 700;
+	background: tomato;
+	padding: 5px;
+	border-radius: 7px;
+	color: #220202;
+	letter-spacing: 3px;
+}
+.expand{
+	width: 100%;
+}
+@media(max-width:992px){
+	.expand {
+		width: 85%;
+		padding: 20px;
+	}
+	.desposit.card{
+		margin-top: 370px;
+		width: 85%;
+		margin-bottom: 10px;
+	}
+	.withdraw.card {
+		width: 85%;
+		margin-bottom: 10px;
+	}
+	.balance.card{
+		width: 85%;
+	}
+	.desposit.card h5 {
+		font-weight: bold;
+	}
+	.withdraw.card h5{
+		font-weight: bold;
+	}
+}
+
+/*Trans-area starts here*/
+
+#trans-area{
+	display: none;
+	
+}

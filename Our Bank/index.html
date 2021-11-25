@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/f21a1c5e3a.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+     <!-- Main Css -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Our bank</title>
+  </head>
+  <body>
+   <div class="login-container">
+       <h1 class="d-flex text-center justify-content-center align-items-center">Welcome To Our Bank</h1>
+      <div class="card">
+        <div class="card-header">
+          <h2 class="text-center">Login Form</h2>
+        </div>
+        <div class="card-body">
+          <form action="#" class="form-content" id="loginform">
+            <div>
+              <div class="form-field">
+                <label for="firstName">First Name</label>
+                <input type="text" name="" id="firstName" class="form-control" placeholder="Enter First Name">
+                <small class="alert-message">Error</small>
+              </div>
+
+              <div class="form-field">
+                <label for="lastName">Last Name</label>
+                <input type="text" name="" id="lastName" class="form-control" placeholder="Enter Last Name">
+                <small class="alert-message">Error</small>
+              </div>
+
+              <div class="form-field">
+                <label for="loginUserPass">User Password</label>
+                <input type="password" name="" id="loginUserPass" class="form-control" placeholder="Enter User Password">
+                <small class="alert-message">Error</small>
+              </div>
+
+              <div class="form-field">
+                <i class="fa fa-eye"></i>
+                <label>Show/Hide Password</label>
+              </div>
+
+              <button type="submit" class="btn btn-success">Login</button>
+            </div>
+          </form>
+        </div>
+      </div>
+   </div>
+
+   <!-- Bangking system -->
+   <div id="trans-area">
+     <div class="row">
+       <div class="col-md-4">
+         <div class="desposit card">
+            <h5>Deposit</h5>
+            <h2 class="fw-bold text-light">$ <span id="currentDeposit">00</span> </h2>
+         </div>
+       </div>
+
+       <div class="col-md-4">
+        <div class="withdraw card">
+           <h5>Withdraw</h5>
+           <h2 class="fw-bold text-light">$ <span id="currentWithdraw">00</span> </h2>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="balance card">
+           <h5>Balance</h5>
+           <h2 class="fw-bold text-light">$ <span id="currentBlance">00</span> </h2>
+        </div>
+      </div>
+     </div>
+
+     <div class="row">
+       <div class="col-md-6 mt-5">
+         <div class="card shadow expand">
+            <div class="card-header">
+              <h3>Deposit</h3>
+            </div>
+            <div class="card-body">
+              <form action="#" class="form-content" id="depositForm">
+                <div>
+                  <div class="form-field">
+                    
+                    <input type="text" name="" id="depositAmount" class="form-control" placeholder="$ Enter Your Amount">
+                    <small class="alert-message">Error</small>
+                  </div>
+    
+                  <button type="submit" class="btn btn-success">Submit</button>
+                </div>
+              </form>
+            </div>
+         </div>
+     </div>
+
+     <div class="col-md-6 mt-5">
+      <div class="card shadow expand">
+         <div class="card-header">
+           <h3>Withdraw</h3>
+         </div>
+         <div class="card-body">
+           <form action="#" class="form-content" id="withdrawform">
+             <div>
+               <div class="form-field">
+               
+                 <input type="text" name="" id="withdrawAmount" class="form-control" placeholder="$ Enter Your Amount">
+                 <small class="alert-message">Error</small>
+               </div>
+ 
+               <button type="submit" class="btn btn-success">Submit</button>
+             </div>
+           </form>
+         </div>
+      </div>
+  </div>
+   </div>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
